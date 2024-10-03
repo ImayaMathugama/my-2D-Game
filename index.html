@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2D Game</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body onkeyup="keyCheck(event);" class="body">
+
+    <div class="main" id="main">
+        <img src= "Walk (1).png"class="idle" id="idle" />
+        <div class="menu" id="menu" onclick="frontPage();">NEXT >></div>
+        
+    </div>
+
+
+
+
+    <div class="frontPage" id="frontPage">
+        <div class="dino">
+            <div class="intro">Instructions</div>
+            
+            <ul class="ul">
+                <li>Press <b>Enter Key</b> to start the game & <b>Run</b>.</li>
+                <li>Press <b>Space key</b> to <b>Jump</b>.</li>
+                <li>Click Pause Button to pause the game</li>
+                <li>If you are hit by obstacle(bomb or flame), you will lost.</li>
+                <li><b>In level 1,</b>if you collect 5 hearts you will get extra 200 points.</li>
+                <li>If you get 500 points as your score you will win level 1.</li>
+                <li><b>In level 2,</b>if you collect 10 hearts you will get extra 400 points.</li>
+                <li>If you get 1000 points as your score you will win level 2.</li>
+                
+                
+            </ul>
+
+            <div class="play" id="play" onclick="game();">PLAY</div>
+                
+            
+        
+
+        </div>
+
+    </div>
+
+    <div class="background" id="background">
+        <img src="score.png" class="scoreBoard" />
+        <img src="heartB.png" class="heartB" />
+        <img src="heart.png" class="heart1" />
+        <div class="text" >SCORE</div>
+        <div class="score" id="score">0</div>
+        <div class="live" id="live">0</div>
+        <img src="pausedBtn.png" class="pausedBtn" id="pausedBtn" onclick="pausedBtn();"/>
+        <img src="Run (1).png" class="player" id="player"/>
+        <img src="blast.png" class="blast" id="blast"/>
+        
+       
+        
+        
+
+    </div>
+
+    <div class="gameOver" id="gameOver">
+        <div>Game Over❗</div>
+        <div>Your score:</div>
+        <div id="endScore">0</div>
+        <div>Collected Hearts:</div>
+        <div id="collectedHearts">0</div>
+        <div class="b1" onclick="back();">Try Again</div> 
+
+        
+    </div>
+
+    <div class="won" id="won">
+        Congradulations❤️🎉
+        
+        <div>Your score:</div>
+        <div id="wonScore">0</div>
+        <div>Collected Hearts:</div>
+        <div id="collectedLives">0</div>
+        <div class="b1" onclick="re();">Play Again</div>
+        <a href="index2.html"><div class="b2" >Level 2</div></a>
+
+       
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
