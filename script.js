@@ -74,7 +74,7 @@ function run(){
     player.src = "Run ("+runImageNumber+").png";
 
     runImageNumber++;
-    if(runImageNumber==9){
+    if(runImageNumber==8){
         runImageNumber=1;
     }
 
